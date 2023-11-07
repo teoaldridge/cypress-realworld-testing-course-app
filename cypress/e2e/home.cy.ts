@@ -1,6 +1,27 @@
+function terminalLog(violations) {
+  cy.task(
+    "log",
+    `${violations.length} accessibility violation${
+      violations.length === 1 ? "" : "s"
+    } ${violations.length === 1 ? "was" : "were"} detected`
+  )
+  // pluck specific keys to keep the table readable
+  const violationData = violations.map(
+    ({ id, impact, description, nodes }) => ({
+      id,
+      impact,
+      description,
+      nodes: nodes.length,
+    })
+  )
+
+  cy.task("table", violationData)
+}
+
 describe("home page", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000")
+    cy.injectAxe()
   })
 
   context("hero section", () => {
@@ -9,6 +30,16 @@ describe("home page", () => {
       cy.get("[data-test='hero-heading']").contains(
         "Testing Next.js Applications with Cypress"
       )
+      cy.checkA11y(
+        null,
+        {
+          runOnly: {
+            type: "tag",
+            values: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"],
+          },
+        },
+        terminalLog
+      )
     })
 
     it("the features on the homepage are correct", () => {
@@ -16,6 +47,17 @@ describe("home page", () => {
       cy.get("dt").eq(0).contains("4 Courses")
       cy.get("dt").eq(1).contains("25+ Lessons")
       cy.get("dt").eq(2).contains("Free and Open Source")
+
+      cy.checkA11y(
+        null,
+        {
+          runOnly: {
+            type: "tag",
+            values: ["wcag2a"],
+          },
+        },
+        terminalLog
+      )
     })
   })
 

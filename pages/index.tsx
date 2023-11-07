@@ -14,7 +14,7 @@ export default function Home({ content, courses }) {
       progressService={progressService}
     >
       <Head>
-        <title>Testing Next.js Applications with Cypress</title>
+        <title>Hi</title>
         <meta
           name="description"
           content="Learn from top industry experts and level-up your testing knowledge - for free."

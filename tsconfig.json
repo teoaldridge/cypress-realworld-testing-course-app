@@ -12,6 +12,7 @@
       "dom.iterable",
       "esnext"
     ],
+    "types": ["cypress", "cypress-axe"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
