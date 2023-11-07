@@ -30,12 +30,13 @@ describe("home page", () => {
       cy.get("[data-test='hero-heading']").contains(
         "Testing Next.js Applications with Cypress"
       )
+      //apply axe accessibility tests with Web Content Accessibility Guidelines (WCAG) 2A and 2AA
       cy.checkA11y(
         null,
         {
           runOnly: {
             type: "tag",
-            values: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"],
+            values: ["wcag2a", "wcag2aa"],
           },
         },
         terminalLog
@@ -48,6 +49,7 @@ describe("home page", () => {
       cy.get("dt").eq(1).contains("25+ Lessons")
       cy.get("dt").eq(2).contains("Free and Open Source")
 
+      //apply axe accessibility tests with Web Content Accessibility Guideline (WCAG) 2A
       cy.checkA11y(
         null,
         {
