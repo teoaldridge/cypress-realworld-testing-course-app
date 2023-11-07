@@ -5,6 +5,7 @@ This application is for the [Testing your first application course](https://lear
 The `start` branch is the main branch for this repo and is the starting point for the course. The [final](https://github.com/cypress-io/cypress-realworld-testing-course-app/tree/final) branch contains the completed tests.
 
 This is a React project, so to start on your local machine:
+! Make sure your npm version matches the npm version in the nvmrc file !
 
 `npm install`
 
