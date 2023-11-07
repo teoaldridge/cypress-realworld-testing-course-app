@@ -4,10 +4,31 @@ This application is for the [Testing your first application course](https://lear
 
 The `start` branch is the main branch for this repo and is the starting point for the course. The [final](https://github.com/cypress-io/cypress-realworld-testing-course-app/tree/final) branch contains the completed tests.
 
+
+This project also has cypress-axe installed. 
+See how axe was installed in the commits. 
+Documentation used to install: 
+Cypress-axe NPM documentation: https://www.npmjs.com/package/cypress-axe
+
+Other documentation and tutorials used to understand how it works: 
+Cypress-axe Github Documentation: https://github.com/component-driven/cypress-axe
+
+Axe API documentation: https://www.deque.com/axe/core-documentation/api-documentation/#section-1-introduction
+
+Great Cypress-axe configuration tutorial I found: https://portal.gitnation.org/contents/configuring-axe-accessibility-tests
+
+Cypress-axe tutorial on how to use and read the tests: Combining Cypress and Axe for Automated Accessibility Tests![image](https://github.com/teoaldridge/cypress-realworld-testing-course-app/assets/74827533/ae447ef0-640e-4883-8cdd-ae2412168c2f)
+
+
+
 This is a React project, so to start on your local machine:
 ! Make sure your npm version matches the npm version in the nvmrc file !
 
 `npm install`
+
+'npm run dev' 
+
+or
 
 `npm start`
 
