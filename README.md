@@ -21,6 +21,7 @@ Great Cypress-axe configuration tutorial I found: https://portal.gitnation.org/c
 
 Cypress-axe tutorial on how to use and read the tests: Combining Cypress and Axe for Automated Accessibility Tests https://www.youtube.com/watch?v=7TDg3Cq0JnA
 
+## To run locally: 
 
 This is a React project, so to start on your local machine:
 ! Make sure your npm version matches the npm version in the nvmrc file !
