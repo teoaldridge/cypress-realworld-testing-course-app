@@ -5,13 +5,14 @@ This application is for the [Testing your first application course](https://lear
 The `start` branch is the main branch for this repo and is the starting point for the course. The [final](https://github.com/cypress-io/cypress-realworld-testing-course-app/tree/final) branch contains the completed tests.
 
 
-This project also has cypress-axe for Accessibility testing installed. 
-I apply the tests with two levels of Web Content Accessibility Guidelines (WCAG) : WCAG 2.0 Level A (WCAG2A) and WCAG 2.0 Level AA (WCAG2AA)
+## This project also has cypress-axe for Accessibility testing installed. 
+### I apply the tests with two levels of Web Content Accessibility Guidelines (WCAG) : WCAG 2.0 Level A (WCAG2A) and WCAG 2.0 Level AA (WCAG2AA)
+
 See how axe was installed in the commits. 
-Documentation used to install: 
+#### Documentation used to install: 
 Cypress-axe NPM documentation: https://www.npmjs.com/package/cypress-axe
 
-Other documentation and tutorials used to understand how it works: 
+#### Other documentation and tutorials used to understand how it works: 
 Cypress-axe Github Documentation: https://github.com/component-driven/cypress-axe
 
 Axe API documentation: https://www.deque.com/axe/core-documentation/api-documentation/#section-1-introduction
